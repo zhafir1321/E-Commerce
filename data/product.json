@@ -1,7 +1,7 @@
 [
     {
         "name": "Canon EOS Rebel T6",
-        "image" : "",
+        "image" : "https://www.dpreview.com/files/p/articles/0282241535/t6-1.jpeg",
         "price": 6200000,
         "description": "Canon EOS Rebel T6 DSLR camera with an 18-55mm lens. It is in good working condition with slight signs of use on the body.",
         "SellerId" : 1,
@@ -10,7 +10,7 @@
     },
     {
         "name": "LG 42LB5600",
-        "image" : "",
+        "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlRHccJKn7bzJAJKwvtFIuRMuCUs4ALLpkpg&s",
         "price": 3875000,
         "description": "LG 42LB5600 LED TV with a 42-inch screen and Full HD resolution. There are a few scratches on the frame, but the picture quality remains excellent.",
         "SellerId" : 1,
@@ -20,7 +20,7 @@
     },
     {
         "name": "Bose SoundLink Mini",
-        "image" : "",
+        "image" : "https://guide-images.cdn.ifixit.com/igi/wsyeMEnEWnFhMuhB.large",
         "price": 1240000,
         "description": "Bose SoundLink Mini portable Bluetooth speaker known for its excellent sound quality. It has some scratches on the casing but performs well.",
         "SellerId" : 1,
@@ -30,7 +30,7 @@
     },
     {
         "name": "PlayStation 4 Slim",
-        "image" : "",
+        "image" : "https://i.pcmag.com/imagery/reviews/02jHxJiYc22Xmn5s1Xlo4Mo-3.fit_scale.size_760x427.v1569473491.jpg",
         "price": 2890000,
         "description": "PlayStation 4 Slim console with a 500GB hard drive, including one controller and several games. It is in good working condition.",
         "SellerId" : 1,
@@ -40,7 +40,7 @@
     },
     {
         "name": "Gucci GG Marmont Mini Bag",
-        "image" : "",
+        "image" : "https://down-id.img.susercontent.com/file/3e73fbbf95008ef97b4bd9a772bc8d4c",
         "price": 15600000,
         "description": "Authentic Gucci GG Marmont Mini Bag in black leather. Features a chain strap and the iconic GG logo. In excellent condition with minor signs of wear on the corners.",
         "SellerId" : 3,
@@ -50,7 +50,7 @@
     },
     {
         "name": "Rolex Datejust 36",
-        "image" : "",
+        "image" : "https://cdn.prod.website-files.com/636a2d3c26aa845d12b17679/645e4082a23c78f657bf3209_2018-12-17-rolex-datejust-36-gallery-03%20(1).webp",
         "price": 45000000,
         "description": "Rolex Datejust 36 with stainless steel bracelet and white dial. Comes with original box and papers. Slightly worn but well maintained.",
         "SellerId" : 3,
@@ -60,7 +60,7 @@
     },
     {
         "name": "Dr. Martens 1460 Pascal Velvet Boots",
-        "image" : "",
+        "image" : "https://media.karousell.com/media/photos/products/2022/12/20/docmart_1460_pascal_velvet_ank_1671508764_24a7e9cc_progressive",
         "price": 1500000,
         "description": "Dr. Martens 1460 Pascal velvet boots in deep red. Size 8. Gently worn with some scuffs on the heels.",
         "SellerId" : 3,
@@ -70,7 +70,7 @@
     },
     {
         "name": "North Face McMurdo Parka",
-        "image" : "",
+        "image" : "https://images.thenorthface.com/is/image/TheNorthFaceEU/CP07_NL1_hero?$262x306$",
         "price": 2750000,
         "description": "North Face McMurdo Parka in navy blue, size L. Features down insulation and a detachable hood. In great condition, suitable for extreme cold weather.",
         "SellerId" : 3,
@@ -80,7 +80,7 @@
     },
     {
         "name": "Toyota Corolla 1995",
-        "image" : "",
+        "image" : "https://i.pinimg.com/originals/cc/9b/12/cc9b12c5048ecb4a2ba1fbfb0de1b77f.jpg",
         "price": 70000000,
         "description": "Toyota Corolla 1995, silver, manual transmission, 150,000 km mileage. Well-maintained with original parts, some minor dents and scratches.",
         "SellerId" : 6,
@@ -90,7 +90,7 @@
     },
     {
         "name": "Jeep Cherokee 1997",
-        "image" : "",
+        "image" : "https://imgx.gridoto.com/crop/2x100:602x500/700x465/filters:watermark(file/2017/gridoto/img/watermark_jip.png,5,5,60)/photo/gridoto/2018/10/23/3972383783.jpg",
         "price": 85000000,
         "description": "Jeep Cherokee 1997, green, automatic transmission, 180,000 km mileage. Good off-road capabilities with some exterior wear and tear.",
         "SellerId" : 6,
@@ -100,7 +100,7 @@
     },
     {
         "name": "Vespa PX 200 1990",
-        "image" : "",
+        "image" : "https://images.sbito.it/api/v1/sbt-ads-images-pro/images/22/22b5b72c-b08f-4c57-a8ff-b59665327459?rule=fullscreen-1x-auto",
         "price": 25000000,
         "description": "Vespa PX 200 1990, red. Classic Italian scooter with 30,000 km mileage. In good condition with some signs of wear on the body.",
         "SellerId" : 6,
@@ -110,7 +110,7 @@
     },
     {
         "name": "Mazda MX-5 Miata 1995",
-        "image" : "",
+        "image" : "https://bringatrailer.com/wp-content/uploads/2023/06/1995_mazda_mx-5-miata_pxl_20230621_000907164-49441.jpg?fit=940%2C626",
         "price": 75000000,
         "description": "Mazda MX-5 Miata 1995, red, manual transmission, 100,000 km mileage. Fun-to-drive sports car with a convertible top, minor exterior wear.",
         "SellerId" : 6,
@@ -120,7 +120,7 @@
     },
     {
         "name": "Grandfather Clock, 19th Century",
-        "image" : "",
+        "image" : "https://i.pinimg.com/736x/72/2b/30/722b30759cfb838bf40494e03dd4a19a.jpg",
         "price": 45000000,
         "description": "Elegant 19th-century grandfather clock with a beautifully carved oak case and brass pendulum. In working condition with original mechanisms, but shows some signs of age.",
         "SellerId" : 6,
@@ -130,7 +130,7 @@
     },
     {
         "name": "Singer Sewing Machine, 1900s",
-        "image" : "",
+        "image" : "https://preview.redd.it/need-an-old-regal-name-for-my-antique-1900-singer-treadle-v0-t8eilvsvetm81.jpg?auto=webp&s=e1ea57b09910b09dc7d4bcbad4c1010f8d2f1163",
         "price": 12000000,
         "description": "Antique Singer sewing machine from the early 1900s. Cast iron base with a wooden tabletop. In good working condition, showcasing intricate design work.",
         "SellerId" : 5,
@@ -140,7 +140,7 @@
     },
     {
         "name": "Louis XV Armchair, 18th Century",
-        "image" : "",
+        "image" : "https://images.squarespace-cdn.com/content/v1/555fa358e4b0de9ddd413f39/1655508950433-E1I0AFJE6SVQW46KC8WE/Studio+Session-26037.jpg?format=2500w",
         "price": 28000000,
         "description": "Louis XV armchair from the 18th century, featuring ornate carvings and luxurious upholstery. Shows some age-related wear but remains a stunning piece of history.",
         "SellerId" : 5,
@@ -150,7 +150,7 @@
     },
     {
         "name": "Victorian Jewelry Box, 1880s",
-        "image" : "",
+        "image" : "https://i.etsystatic.com/12099164/r/il/879211/4405037117/il_570xN.4405037117_5or3.jpg",
         "price": 8600000,
         "description": "Victorian jewelry box from the 1880s with velvet lining and ornate metalwork. In good condition with some signs of age-related wear on the exterior.",
         "SellerId" : 5,
@@ -160,7 +160,7 @@
     },
     {
         "name": "Art Nouveau Table Lamp, Early 1900s",
-        "image" : "",
+        "image" : "https://cdn20.pamono.com/p/g/1/4/1438799_50bjpbz3qt/art-nouveau-table-lamp-1900s-2.jpg",
         "price": 10000000,
         "description": "Art Nouveau table lamp from the early 1900s with a stained glass shade and bronze base. Functional with minor patina and wear on the metal parts.",
         "SellerId" : 5,
