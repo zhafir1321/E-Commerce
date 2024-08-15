@@ -4,14 +4,24 @@ const bcrypt = require("bcryptjs");
 const { where } = require("sequelize");
 
 class Controller {
-  static async renderRegister(req, res) {
-    try {
-      res.render("register");
-    } catch (error) {
-      console.log(error);
-      res.send(error);
+
+    static async renderHome(req, res) {
+        try {
+            res.render('homeBeforeLogin')
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
     }
-  }
+
+    static async renderRegister(req, res) {
+        try {
+            res.render('register')
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
 
   static async handleRegister(req, res) {
     try {
@@ -43,6 +53,45 @@ class Controller {
       if (user) {
         const isValidPassword = await bcrypt.compare(password, user.password);
 
+                if (isValidPassword) {
+                    req.session.user = {
+                        username: user.username,
+                        role: user.role
+                    }
+                    
+                    if (req.session.user.role === 'Buyer') {
+                        res.redirect('/home')
+                    } 
+                    if (req.session.user.role === 'Seller') {
+                        res.redirect('/home-seller')
+                    }
+                    
+                } else {
+                    const error = 'Incorrect Password'
+                    res.redirect(`/login?error=${error}`)
+                }
+            } else {
+                const error = 'Username not found!'
+                res.redirect(`/login?error=${error}`)
+            }
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
+    static async renderHomeSeller(req, res) {
+        try {
+            res.render('home')
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
+}
+
+module.exports = Controller
         if (isValidPassword) {
           res.redirect("/");
         } else {
