@@ -13,7 +13,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       User.hasOne(models.Profile)
-      User.hasMany(models.Product)
+      User.hasMany(models.Product, {as: 'ProductSeller', foreignKey: 'SellerId'})
+      User.hasMany(models.Product, {as: 'ProductBuyer', foreignKey: 'BuyerId'})
     }
   }
   User.init({
