@@ -25,9 +25,19 @@ const fileFilter = (req, file, cb) => {
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }))
 
+
 app.use(multer({storage: fileStorage, fileFilter: fileFilter}).single('image'))
 
 app.use('/images', express.static('images'));
+
+
+
+app.get('/register', Controller.renderRegister)
+app.post('/register', Controller.handleRegister)
+app.get('/login', Controller.renderLogin)
+app.post('/login', Controller.handleLogin)
+app.get('/admin', Controller.renderAdmin)
+app.get('/admin/:UserId/delete', Controller.handelDelete)
 
 app.use(session({
     secret: 'r4h4si4',

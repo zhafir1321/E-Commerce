@@ -10,6 +10,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+
+    </style>
   </head>
   <body style="background-color: rgb(95, 93, 213)">
     <!-- navbar -->
@@ -69,8 +72,9 @@
 
     <div class="container text-center mt-5">
       <div class="row justify-content-center">
+
         <% data.forEach(el => { %>
-         <div class="col-md-3" style="background-color: aliceblue; margin-right: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+         <div class="col-md-3" style="background-color: aliceblue; margin-right: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);transition: transform 0.5s ease; transform: scale(1); cursor: pointer;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
           <a href="" style="text-decoration: none; color: inherit;">
           <img
             src="<%= el.image %>"
