@@ -1,43 +1,173 @@
 [
     {
-        "name": "Sepeda Gunung Giant Talon 2",
-        "image" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/4/3/b5806fbf-cb4d-45b7-943d-105b3037afdc.jpg",
-        "price": 2000000,
-        "description": "Sepeda gunung Giant Talon 2 bekas dengan kondisi masih sangat baik. Sudah di-service dan siap digunakan. Ukuran frame M, warna hitam.",
+        "name": "Canon EOS Rebel T6",
+        "image" : "",
+        "price": 6200000,
+        "description": "Canon EOS Rebel T6 DSLR camera with an 18-55mm lens. It is in good working condition with slight signs of use on the body.",
         "SellerId" : 1,
-        "BuyerId" : null
+        "BuyerId" : null,
+        "CategoryId" : 1
     },
     {
-        "name": "Televisi LED Samsung 32 inci",
-        "image" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/10/31/3b5bddbf-29dc-421e-85dc-8b9063802331.jpg",
+        "name": "LG 42LB5600",
+        "image" : "",
+        "price": 3875000,
+        "description": "LG 42LB5600 LED TV with a 42-inch screen and Full HD resolution. There are a few scratches on the frame, but the picture quality remains excellent.",
+        "SellerId" : 1,
+        "BuyerId" : null,
+        "CategoryId" : 1
+
+    },
+    {
+        "name": "Bose SoundLink Mini",
+        "image" : "",
+        "price": 1240000,
+        "description": "Bose SoundLink Mini portable Bluetooth speaker known for its excellent sound quality. It has some scratches on the casing but performs well.",
+        "SellerId" : 1,
+        "BuyerId" : null,
+        "CategoryId" : 1
+
+    },
+    {
+        "name": "PlayStation 4 Slim",
+        "image" : "",
+        "price": 2890000,
+        "description": "PlayStation 4 Slim console with a 500GB hard drive, including one controller and several games. It is in good working condition.",
+        "SellerId" : 1,
+        "BuyerId" : null,
+        "CategoryId" : 1
+
+    },
+    {
+        "name": "Gucci GG Marmont Mini Bag",
+        "image" : "",
+        "price": 15600000,
+        "description": "Authentic Gucci GG Marmont Mini Bag in black leather. Features a chain strap and the iconic GG logo. In excellent condition with minor signs of wear on the corners.",
+        "SellerId" : 3,
+        "BuyerId" : null,
+        "CategoryId" : 2
+
+    },
+    {
+        "name": "Rolex Datejust 36",
+        "image" : "",
+        "price": 45000000,
+        "description": "Rolex Datejust 36 with stainless steel bracelet and white dial. Comes with original box and papers. Slightly worn but well maintained.",
+        "SellerId" : 3,
+        "BuyerId" : null,
+        "CategoryId" : 2
+
+    },
+    {
+        "name": "Dr. Martens 1460 Pascal Velvet Boots",
+        "image" : "",
         "price": 1500000,
-        "description": "Televisi LED Samsung 32 inci bekas, masih berfungsi dengan baik dan tanpa dead pixel. Dilengkapi dengan remote dan kabel power.",
+        "description": "Dr. Martens 1460 Pascal velvet boots in deep red. Size 8. Gently worn with some scuffs on the heels.",
         "SellerId" : 3,
-        "BuyerId" : null
+        "BuyerId" : null,
+        "CategoryId" : 2
+
     },
     {
-        "name": "Laptop ASUS VivoBook X407",
-        "image" : "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/97/MTA-161651581/no-brand_no-brand_full01.jpg",
-        "price": 100000,
-        "description": "Laptop ASUS VivoBook X407 bekas, prosesor Intel Core i5, RAM 8GB, SSD 256GB. Kondisi baik, ada sedikit goresan di casing.",
-        "SellerId" : 1,
-        "BuyerId" : null
-    },
-    {
-        "name": "Meja Belajar Kayu Jati",
-        "image" : "https://id-live-01.slatic.net/p/88dd69fd478b88af589c03f6ddb7cf38.jpg",
-        "price": 750000,
-        "description": "Meja belajar dari kayu jati, bekas dengan sedikit goresan. Cocok untuk anak sekolah atau ruang kerja. Ukuran 120x60 cm.",
-        "SellerId" : 1,
-        "BuyerId" : null
-    },
-    {
-        "name": "Kamera Canon EOS 600D",
-        "image" : "https://id-live-01.slatic.net/p/e51f3fc5c6a22f709ff1d7d3f8a467ed.jpg",
-        "price": 850000,
-        "description": "Kamera Canon EOS 600D bekas, dilengkapi dengan lensa 18-55mm dan tas kamera. Kondisi baik, dengan beberapa tanda pakai pada body.",
+        "name": "North Face McMurdo Parka",
+        "image" : "",
+        "price": 2750000,
+        "description": "North Face McMurdo Parka in navy blue, size L. Features down insulation and a detachable hood. In great condition, suitable for extreme cold weather.",
         "SellerId" : 3,
-        "BuyerId" : null
+        "BuyerId" : null,
+        "CategoryId" : 2
+
+    },
+    {
+        "name": "Toyota Corolla 1995",
+        "image" : "",
+        "price": 70000000,
+        "description": "Toyota Corolla 1995, silver, manual transmission, 150,000 km mileage. Well-maintained with original parts, some minor dents and scratches.",
+        "SellerId" : 6,
+        "BuyerId" : null,
+        "CategoryId" : 3
+
+    },
+    {
+        "name": "Jeep Cherokee 1997",
+        "image" : "",
+        "price": 85000000,
+        "description": "Jeep Cherokee 1997, green, automatic transmission, 180,000 km mileage. Good off-road capabilities with some exterior wear and tear.",
+        "SellerId" : 6,
+        "BuyerId" : null,
+        "CategoryId" : 3
+
+    },
+    {
+        "name": "Vespa PX 200 1990",
+        "image" : "",
+        "price": 25000000,
+        "description": "Vespa PX 200 1990, red. Classic Italian scooter with 30,000 km mileage. In good condition with some signs of wear on the body.",
+        "SellerId" : 6,
+        "BuyerId" : null,
+        "CategoryId" : 3
+
+    },
+    {
+        "name": "Mazda MX-5 Miata 1995",
+        "image" : "",
+        "price": 75000000,
+        "description": "Mazda MX-5 Miata 1995, red, manual transmission, 100,000 km mileage. Fun-to-drive sports car with a convertible top, minor exterior wear.",
+        "SellerId" : 6,
+        "BuyerId" : null,
+        "CategoryId" : 3
+
+    },
+    {
+        "name": "Grandfather Clock, 19th Century",
+        "image" : "",
+        "price": 45000000,
+        "description": "Elegant 19th-century grandfather clock with a beautifully carved oak case and brass pendulum. In working condition with original mechanisms, but shows some signs of age.",
+        "SellerId" : 6,
+        "BuyerId" : null,
+        "CategoryId" : 4
+
+    },
+    {
+        "name": "Singer Sewing Machine, 1900s",
+        "image" : "",
+        "price": 12000000,
+        "description": "Antique Singer sewing machine from the early 1900s. Cast iron base with a wooden tabletop. In good working condition, showcasing intricate design work.",
+        "SellerId" : 5,
+        "BuyerId" : null,
+        "CategoryId" : 4
+
+    },
+    {
+        "name": "Louis XV Armchair, 18th Century",
+        "image" : "",
+        "price": 28000000,
+        "description": "Louis XV armchair from the 18th century, featuring ornate carvings and luxurious upholstery. Shows some age-related wear but remains a stunning piece of history.",
+        "SellerId" : 5,
+        "BuyerId" : null,
+        "CategoryId" : 4
+
+    },
+    {
+        "name": "Victorian Jewelry Box, 1880s",
+        "image" : "",
+        "price": 8600000,
+        "description": "Victorian jewelry box from the 1880s with velvet lining and ornate metalwork. In good condition with some signs of age-related wear on the exterior.",
+        "SellerId" : 5,
+        "BuyerId" : null,
+        "CategoryId" : 4
+
+    },
+    {
+        "name": "Art Nouveau Table Lamp, Early 1900s",
+        "image" : "",
+        "price": 10000000,
+        "description": "Art Nouveau table lamp from the early 1900s with a stained glass shade and bronze base. Functional with minor patina and wear on the metal parts.",
+        "SellerId" : 5,
+        "BuyerId" : null,
+        "CategoryId" : 4
+
     }
+    
     
 ]
