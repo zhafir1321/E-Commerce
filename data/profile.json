@@ -1,0 +1,27 @@
+[
+    {
+        "name" : "Malih Tontong",
+        "phoneNumber" : "085678786969",
+        "email" : "malih@gmail.com",
+        "UserId" : 1
+    },
+    {
+        "name" : "Zafir The Master",
+        "phoneNumber" : "085678786968",
+        "email" : "zafir@gmail.com",
+        "UserId" : 2
+    },
+    {
+        "name" : "Fauzan Good Boy",
+        "phoneNumber" : "085678786967",
+        "email" : "fauzan@gmail.com",
+        "UserId" : 3
+    },
+    {
+        "name" : "Gerald Wibu",
+        "phoneNumber" : "085678786966",
+        "email" : "gerald@gmail.com",
+        "UserId" : 4
+    }
+    
+]
