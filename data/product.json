@@ -1,38 +1,43 @@
 [
     {
         "Name": "Sepeda Gunung Giant Talon 2",
-        "imangeUrl" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/4/3/b5806fbf-cb4d-45b7-943d-105b3037afdc.jpg",
+        "image" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2021/4/3/b5806fbf-cb4d-45b7-943d-105b3037afdc.jpg",
         "price": 2000000,
-        "deskripsi": "Sepeda gunung Giant Talon 2 bekas dengan kondisi masih sangat baik. Sudah di-service dan siap digunakan. Ukuran frame M, warna hitam."
+        "deskripsi": "Sepeda gunung Giant Talon 2 bekas dengan kondisi masih sangat baik. Sudah di-service dan siap digunakan. Ukuran frame M, warna hitam.",
+        "SellerId" : 1,
+        "BuyerId" : null
     },
     {
         "Name": "Televisi LED Samsung 32 inci",
-        "imangeUrl" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/10/31/3b5bddbf-29dc-421e-85dc-8b9063802331.jpg",
+        "image" : "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/10/31/3b5bddbf-29dc-421e-85dc-8b9063802331.jpg",
         "price": 1500000,
-        "deskripsi": "Televisi LED Samsung 32 inci bekas, masih berfungsi dengan baik dan tanpa dead pixel. Dilengkapi dengan remote dan kabel power."
+        "deskripsi": "Televisi LED Samsung 32 inci bekas, masih berfungsi dengan baik dan tanpa dead pixel. Dilengkapi dengan remote dan kabel power.",
+        "SellerId" : 3,
+        "BuyerId" : null
     },
     {
         "Name": "Laptop ASUS VivoBook X407",
-        "imangeUrl" : "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/97/MTA-161651581/no-brand_no-brand_full01.jpg",
+        "image" : "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/97/MTA-161651581/no-brand_no-brand_full01.jpg",
         "price": 100000,
-        "deskripsi": "Laptop ASUS VivoBook X407 bekas, prosesor Intel Core i5, RAM 8GB, SSD 256GB. Kondisi baik, ada sedikit goresan di casing."
-    },
-    {
-        "Name": "Laptop ASUS VivoBook X407",
-        "imangeUrl" : "https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/97/MTA-161651581/no-brand_no-brand_full01.jpg",
-        "price": 100000,
-        "deskripsi": "Laptop ASUS VivoBook X407 bekas, prosesor Intel Core i5, RAM 8GB, SSD 256GB. Kondisi baik, ada sedikit goresan di casing."
+        "deskripsi": "Laptop ASUS VivoBook X407 bekas, prosesor Intel Core i5, RAM 8GB, SSD 256GB. Kondisi baik, ada sedikit goresan di casing.",
+        "SellerId" : 1,
+        "BuyerId" : null
     },
     {
         "Name": "Meja Belajar Kayu Jati",
-        "imangeUrl" : "https://id-live-01.slatic.net/p/88dd69fd478b88af589c03f6ddb7cf38.jpg",
+        "image" : "https://id-live-01.slatic.net/p/88dd69fd478b88af589c03f6ddb7cf38.jpg",
         "price": 750000,
-        "deskripsi": "Meja belajar dari kayu jati, bekas dengan sedikit goresan. Cocok untuk anak sekolah atau ruang kerja. Ukuran 120x60 cm."
+        "deskripsi": "Meja belajar dari kayu jati, bekas dengan sedikit goresan. Cocok untuk anak sekolah atau ruang kerja. Ukuran 120x60 cm.",
+        "SellerId" : 1,
+        "BuyerId" : null
     },
     {
         "Name": "Kamera Canon EOS 600D",
-        "imangeUrl" : "https://id-live-01.slatic.net/p/e51f3fc5c6a22f709ff1d7d3f8a467ed.jpg",
-        "price": 850000
+        "image" : "https://id-live-01.slatic.net/p/e51f3fc5c6a22f709ff1d7d3f8a467ed.jpg",
+        "price": 850000,
+        "deskripsi": "Kamera Canon EOS 600D bekas, dilengkapi dengan lensa 18-55mm dan tas kamera. Kondisi baik, dengan beberapa tanda pakai pada body.",
+        "SellerId" : 3,
+        "BuyerId" : null
     }
     
 ]

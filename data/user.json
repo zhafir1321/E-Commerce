@@ -1,0 +1,22 @@
+[
+    {
+        "username" : "Malih_Tontong",
+        "role" : "Seller",
+        "password" : "12345"
+    },
+    {
+        "username" : "Zafir_TheMaster",
+        "role" : "Buyer",
+        "password" : "12345"
+    },
+    {
+        "username" : "Fauzan_GoodBoy13",
+        "role" : "Seller",
+        "password" : "12345"
+    },
+    {
+        "username" : "Gerald_Wibu",
+        "role" : "Buyer",
+        "password" : "12345"
+    }
+]
