@@ -10,11 +10,12 @@ router.get('/login', Controller.renderLogin);
 router.post('/login', Controller.handleLogin);
 
 router.use(function (req, res, next) {
-    if (!req.session.userId) {
+    if (!req.session.user) {
         res.redirect('/login')
     } else {
         next()
     }
 }) 
 
+router.get('/home-seller', Controller.renderHomeSeller)
 module.exports = router

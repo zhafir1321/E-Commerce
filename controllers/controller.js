@@ -48,12 +48,23 @@ class Controller {
         try {
             const { username, password } = req.body
             const user = await User.findOne({ where: { username } })
+            
             if (user) {
                 const isValidPassword = await bcrypt.compare(password, user.password)
 
                 if (isValidPassword) {
-                    req.session.userId = user.id
-                    res.redirect('/')
+                    req.session.user = {
+                        username: user.username,
+                        role: user.role
+                    }
+                    
+                    if (req.session.user.role === 'Buyer') {
+                        res.redirect('/home')
+                    } 
+                    if (req.session.user.role === 'Seller') {
+                        res.redirect('/home-seller')
+                    }
+                    
                 } else {
                     const error = 'Incorrect Password'
                     res.redirect(`/login?error=${error}`)
@@ -62,6 +73,15 @@ class Controller {
                 const error = 'Username not found!'
                 res.redirect(`/login?error=${error}`)
             }
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
+    static async renderHomeSeller(req, res) {
+        try {
+            res.render('home')
         } catch (error) {
             console.log(error);
             res.send(error)
