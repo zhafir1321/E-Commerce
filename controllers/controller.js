@@ -3,6 +3,15 @@ const bcrypt = require('bcryptjs')
 
 class Controller {
 
+    static async renderHome(req, res) {
+        try {
+            res.render('homeBeforeLogin')
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
     static async renderRegister(req, res) {
         try {
             res.render('register')
@@ -43,6 +52,7 @@ class Controller {
                 const isValidPassword = await bcrypt.compare(password, user.password)
 
                 if (isValidPassword) {
+                    req.session.userId = user.id
                     res.redirect('/')
                 } else {
                     const error = 'Incorrect Password'
