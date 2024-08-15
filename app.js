@@ -7,6 +7,13 @@ const session = require('express-session')
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }))
 
+
+app.get('/register', Controller.renderRegister)
+app.post('/register', Controller.handleRegister)
+app.get('/login', Controller.renderLogin)
+app.post('/login', Controller.handleLogin)
+app.get('/admin', Controller.renderAdmin)
+app.get('/admin/:UserId/delete', Controller.handelDelete)
 app.use(session({
     secret: 'r4h4si4',
     resave: false,
