@@ -38,22 +38,31 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="text-center">Tambah Produk</h2>
-                <form action="/addProduct" method="post" enctype="multipart/form-data">
+                <form action="/seller/add/product" method="post" enctype="multipart/form-data">
                   <div class="form-group">
                     <label for="productImage">Foto Produk</label>
-                    <input type="file" class="form-control" id="productImage" name="productImage" required>
+                    <input type="file" class="form-control" id="productImage" name="image" required>
                   </div>
                   <div class="form-group">
                     <label for="productName">Nama Produk</label>
-                    <input type="text" class="form-control" id="productName" name="productName" placeholder="Masukkan nama produk" required>
+                    <input type="text" class="form-control" id="productName" name="name" placeholder="Masukkan nama produk" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="category">Category</label>
+                    <select name="CategoryId" id="category" class="form-control">
+                      <option selected disabled>---Choose---</option>
+                      <% data.forEach(element => { %>
+                        <option value="<%= element.id %>"><%= element.name %></option>
+                      <% }) %>
+                    </select>
                   </div>
                   <div class="form-group">
                     <label for="productPrice">Harga Produk</label>
-                    <input type="number" class="form-control" id="productPrice" name="productPrice" placeholder="Masukkan harga produk" required>
+                    <input type="number" class="form-control" id="productPrice" name="price" placeholder="Masukkan harga produk" required>
                   </div>
                   <div class="form-group">
                     <label for="productDescription">Deskripsi Produk</label>
-                    <textarea class="form-control" id="productDescription" name="productDescription" placeholder="Masukkan deskripsi produk" required rows="5"></textarea>
+                    <textarea class="form-control" id="productDescription" name="description" placeholder="Masukkan deskripsi produk" required rows="5"></textarea>
                   </div>
                   <div class="form-group mt-5 text-center">
                     <button type="submit" class="btn btn-primary">Tambah Produk</button>

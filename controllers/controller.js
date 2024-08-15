@@ -1,5 +1,6 @@
-const { Profile, User } = require('../models/index')
+const { Profile, User, Product, Category } = require('../models/index')
 const bcrypt = require('bcryptjs')
+
 
 class Controller {
 
@@ -54,12 +55,13 @@ class Controller {
 
                 if (isValidPassword) {
                     req.session.user = {
+                        userId: user.id,
                         username: user.username,
                         role: user.role
                     }
                     
                     if (req.session.user.role === 'Buyer') {
-                        res.redirect('/home')
+                        res.redirect('/home-buyer')
                     } 
                     if (req.session.user.role === 'Seller') {
                         res.redirect('/home-seller')
@@ -79,9 +81,62 @@ class Controller {
         }
     }
 
+    static async renderHomeBuyer(req, res) {
+        try {
+            const { CategoryId } = req.query
+            let options = {
+                include: Category
+            }
+            if (CategoryId) {
+                options.where = {
+                    CategoryId
+                }
+            }
+            const data = await Product.findAll(options)
+            const category = await Category.findAll()
+            
+            res.render('home', {data, category})
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
     static async renderHomeSeller(req, res) {
         try {
-            res.render('home')
+            res.render('sellerHome')
+        } catch (error) {
+            console.log(error);
+            res.render(error)
+        }
+    }
+
+    static async renderAddProduct(req, res) {
+        try {
+            const data = await Category.findAll()
+            
+            res.render('sellerAddProduct', {data})
+        } catch (error) {
+            console.log(error);
+            res.send(error)
+        }
+    }
+
+    static async handleAddProduct(req, res) {
+        try {
+            
+            console.log(req.body);
+            console.log(req.session);
+            
+            const { name, price, description, CategoryId } = req.body
+            
+            const {path} = req.file
+            const { userId } = req.session.user
+            await Product.create({ name, price, description, SellerId: userId, image: path, CategoryId });
+
+            
+            
+            
         } catch (error) {
             console.log(error);
             res.send(error)

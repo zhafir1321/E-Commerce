@@ -48,13 +48,13 @@
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Cari produk..."
-              aria-label="Search"
-            />
+          <form class="d-flex" role="search" action="/home-buyer">
+            <select name="CategoryId" class="form-control me-2">
+              <option disabled selected>---Choose---</option>
+              <% category.forEach(el => { %>
+               <option value="<%= el.id %>"><%= el.name %></option>
+              <% }) %>
+            </select>
             <button class="btn btn-warning" type="submit">Cari</button>
           </form>
         </div>
@@ -69,17 +69,21 @@
 
     <div class="container text-center mt-5">
       <div class="row justify-content-center">
-        <div class="col-md-3" style="background-color: aliceblue; margin-right: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <% data.forEach(el => { %>
+         <div class="col-md-3" style="background-color: aliceblue; margin-right: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+          <a href="" style="text-decoration: none; color: inherit;">
           <img
-            src="https://www.dpreview.com/files/p/articles/0282241535/t6-1.jpeg"
+            src="<%= el.image %>"
             class="img-fluid rounded"
             alt="Foto"
-            style="margin-top: 10px;"
+            style="margin-top: 10px; width: 100%; height: 200px; object-fit: cover;"
           />
-          <p>Electronic</p>
-          <h5>Canon EOS Rebel T6</h5>
-          <p>Rp 6.200.000</p>
+          <p><%= el.Category.name %></p>
+          <h5><%= el.name %></h5>
+          <p><%= el.price %></p>
+          </a>
         </div>
+        <% }) %>
       </div>
     </div>
 
