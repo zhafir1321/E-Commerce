@@ -22,6 +22,18 @@
         "phoneNumber" : "085678786966",
         "email" : "gerald@gmail.com",
         "UserId" : 4
+    },
+    {
+        "name" : "Jungun Bad Boy",
+        "phoneNumber" : "085678786965",
+        "email" : "jungun@gmail.com",
+        "UserId" : 5
+    },
+    {
+        "name" : "Fata Mc Power",
+        "phoneNumber" : "085678786964",
+        "email" : "fata@gmail.com",
+        "UserId" : 6
     }
     
 ]

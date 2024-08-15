@@ -18,5 +18,15 @@
         "username" : "Gerald_Wibu",
         "role" : "Buyer",
         "password" : "12345"
+    },
+    {
+        "username" : "Jungun_BadBoy12",
+        "role" : "Seller",
+        "password" : "12345"
+    },
+    {
+        "username" : "Fata_McPower12",
+        "role" : "Seller",
+        "password" : "12345"
     }
 ]
