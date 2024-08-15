@@ -135,24 +135,8 @@ class Controller {
         }
     }
 
-}
 
-module.exports = Controller
-        if (isValidPassword) {
-          res.redirect("/");
-        } else {
-          const error = "Incorrect Password";
-          res.redirect(`/login?error=${error}`);
-        }
-      } else {
-        const error = "Username not found!";
-        res.redirect(`/login?error=${error}`);
-      }
-    } catch (error) {
-      console.log(error);
-      res.send(error);
-    }
-  }
+
 
   static async renderAdmin(req, res) {
     try {
