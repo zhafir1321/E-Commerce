@@ -17,7 +17,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="<%= role === 'Seller' ? '/home-seller' : 'home-buyer' %>">Home</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -37,14 +37,14 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h2 class="text-center">Tambah Produk</h2>
+                <h2 class="text-center">Add Product</h2>
                 <form action="/seller/add/product" method="post" enctype="multipart/form-data">
                   <div class="form-group">
-                    <label for="productImage">Foto Produk</label>
+                    <label for="productImage">Photo</label>
                     <input type="file" class="form-control" id="productImage" name="image" required>
                   </div>
                   <div class="form-group">
-                    <label for="productName">Nama Produk</label>
+                    <label for="productName">Name</label>
                     <input type="text" class="form-control" id="productName" name="name" placeholder="Masukkan nama produk" required>
                   </div>
                   <div class="form-group">
@@ -57,15 +57,15 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="productPrice">Harga Produk</label>
+                    <label for="productPrice">Price</label>
                     <input type="number" class="form-control" id="productPrice" name="price" placeholder="Masukkan harga produk" required>
                   </div>
                   <div class="form-group">
-                    <label for="productDescription">Deskripsi Produk</label>
+                    <label for="productDescription">Description</label>
                     <textarea class="form-control" id="productDescription" name="description" placeholder="Masukkan deskripsi produk" required rows="5"></textarea>
                   </div>
                   <div class="form-group mt-5 text-center">
-                    <button type="submit" class="btn btn-primary">Tambah Produk</button>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
                   </div>
                 </form>
               </div>

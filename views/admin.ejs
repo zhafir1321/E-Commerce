@@ -10,7 +10,7 @@
      <!-- navbar -->
      <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SecondChanceID</a>
+          <a class="navbar-brand" href="/admin">SecondChanceID</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -25,12 +25,12 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="/admin">Home</a>
               </li>
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#" style="margin-right: 20px;">Logout</a>
+                <a class="nav-link" href="/logout" style="margin-right: 20px;">Logout</a>
               </li>
             </ul>
           </div>
@@ -41,6 +41,9 @@
       <!-- Container Table -->
       <div class="container">
         <h2 class="text-center mb-4">Users</h2>
+        <% if (username) { %>
+         <p style="color: red;">Deleted <%= name %> as <%= username %> username </p>
+        <% } %>
         <table class="table table-striped">
           <thead>
             <tr>
@@ -54,6 +57,7 @@
           </thead>
           <tbody>
             <% data.forEach((el, index) => { %>
+              <% if (el.role != 'Admin') { %>
             <tr>
               <td><%= index += 1 %></td>
               <td><%= el.name %></td>
@@ -62,6 +66,7 @@
               <td><%= el.email %></td>
               <td><a href="/admin/<%= el.User.id %>/delete"><button class="btn btn-danger">Delete</button></td></a>
             </tr>
+            <% } %>
             <% }) %>
           </tbody>
         </table>

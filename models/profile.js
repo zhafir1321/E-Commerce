@@ -11,13 +11,49 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Profile.belongsTo(models.User)
+      Profile.belongsTo(models.User, { foreignKey: 'UserId', onDelete: 'CASCADE' });
     }
   }
   Profile.init({
-    name: DataTypes.STRING,
-    phoneNumber: DataTypes.STRING,
-    email: DataTypes.STRING,
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notNull: {
+          msg: "Name is required"
+        },
+        notEmpty: {
+          msg: "Name is required"
+        }
+      }
+    },
+    phoneNumber: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: "Phone Number is required"
+        },
+        notNull: {
+          msg: "Phone Number is required"
+        }
+      }
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        notEmpty: {
+          msg: "Email is required"
+        },
+        notNull: {
+          msg: "Email is required"
+        },
+        isEmail: {
+          msg: "Invalid Email"
+        }
+      }
+    },
     UserId: DataTypes.INTEGER
   }, {
     sequelize,

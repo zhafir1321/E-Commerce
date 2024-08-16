@@ -11,14 +11,14 @@
      <!-- navbar -->
      <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">SecondChanceID</a>
+          <a class="navbar-brand" href="<%= role === 'Seller' ? '/home-seller' : 'home-buyer' %>">SecondChanceID</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="<%= role === 'Seller' ? '/home-seller' : 'home-buyer' %>">Home</a>
               </li>
             </ul>
           </div>
@@ -34,13 +34,13 @@
           <div class="col-md-6">
             <div class="row">
               <div class="col-md-6" style="text-align: left;">
-                <img src="https://www.dpreview.com/files/p/articles/0282241535/t6-1.jpeg" class="img-fluid" alt="..." style="float: left;">
+                <img src="<%= data.image %>" class="img-fluid" alt="<%= data.name %>" style="float: left;">
               </div>
               <div class="col-md-6" style="background-color: white;">
-                <h5 class="card-title">Canon EOS Rebel T6</h5>
-                <p class="card-text">Rp 6.200.000</p>
-                <p class="card-text">Canon EOS Rebel T6 DSLR camera with an 18-55mm lens. It is in good working condition with slight signs of use on the body.</p>
-                <p style="text-align: right;">Category: Electronic</p>
+                <h5 class="card-title"><%= data.name %></h5>
+                <p class="card-text"><%= data.convert %></p>
+                <p class="card-text"><%= data.description %></p>
+                <p style="text-align: right;">Category: <%= data.Category.name %></p>
               </div>
             </div>
           </div>
@@ -48,7 +48,11 @@
       </div>
       <div class="row justify-content-center mt-5">
         <div class="col-md-8 text-center">
-          <button type="button" class="btn btn-primary btn-lg">Buy Now</button>
+          <% if (data.BuyerId) { %>
+          <button type="button" class="btn btn-primary btn-lg" disabled>Sold Out!</button>
+          <% } else { %>
+          <a href="/seller/<%= data.id %>/buy"><button type="button" class="btn btn-primary btn-lg">Buy Now</button></a>
+          <%} %>
         </div>
       </div>
 

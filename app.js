@@ -1,9 +1,9 @@
 const express = require('express')
-const Controller = require('./controllers/controller')
 const app = express()
 const router = require('./routers/index')
 const session = require('express-session')
 const multer = require('multer')
+const sequelize = require('./models/index').sequelize
 
 const fileStorage = multer.diskStorage({
     destination: (req, file, cb) => {
@@ -32,12 +32,7 @@ app.use('/images', express.static('images'));
 
 
 
-app.get('/register', Controller.renderRegister)
-app.post('/register', Controller.handleRegister)
-app.get('/login', Controller.renderLogin)
-app.post('/login', Controller.handleLogin)
-app.get('/admin', Controller.renderAdmin)
-app.get('/admin/:UserId/delete', Controller.handelDelete)
+
 
 app.use(session({
     secret: 'r4h4si4',
@@ -51,6 +46,13 @@ app.use(session({
 
 app.use(router)
 
-app.listen(3000, () => {
-    console.log(`SERVER CONNECTED`);
-})
+sequelize
+  .sync({ alter: true })
+  .then(() => {
+    app.listen(3000, () => {
+      console.log(`Server is running on port`);
+    });
+  })
+  .catch((error) => {
+    console.error(error);
+  });
