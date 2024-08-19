@@ -48,7 +48,6 @@ router.get('/admin/:UserId/delete', admin, Controller.handelDelete);
 router.get('/seller/:productId', buyer, Controller.renderProductDetail)
 router.get('/seller/:productId/buy', buyer, Controller.handleBuyProduct)
 
-router.get('/seller/:sellerId')
 
 router.get('/logout', Controller.handleLogout)
 

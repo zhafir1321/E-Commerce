@@ -60,6 +60,10 @@ module.exports = (sequelize, DataTypes) => {
           notEmpty: {
             msg: 'Price is required',
           },
+          max: {
+            args: 2147483647,
+            msg: 'Price is too high'
+          },
         },
       },
       image: {
@@ -93,12 +97,12 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
         validate: {
           notNull: {
-            msg: "Category is required"
+            msg: 'Category is required',
           },
           notEmpty: {
-            msg: "Category is required"
-          }
-        }
+            msg: 'Category is required',
+          },
+        },
       },
     },
     {

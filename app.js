@@ -46,13 +46,18 @@ app.use(session({
 
 app.use(router)
 
-sequelize
-  .sync({ alter: true })
-  .then(() => {
-    app.listen(3000, () => {
-      console.log(`Server is running on port`);
-    });
-  })
-  .catch((error) => {
-    console.error(error);
-  });
+app.listen(3000, () => {
+    console.log(`SERVER CONNECTED`);
+    
+})
+
+// sequelize
+//   .sync({ alter: true })
+//   .then(() => {
+//     app.listen(3000, () => {
+//       console.log(`Server is running on port`);
+//     });
+//   })
+//   .catch((error) => {
+//     console.error(error);
+//   });

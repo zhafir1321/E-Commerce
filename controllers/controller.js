@@ -87,12 +87,11 @@ class Controller {
 
   static async renderHomeBuyer(req, res) {
     try {
-      const { role } = req.session.user
       const { search } = req.query;
       const data = await Product.searchProduct(search)
       const category = await Category.findAll();
 
-      res.render('home', { data, category, role });
+      res.render('home', { data, category });
     } catch (error) {
       console.log(error);
       res.send(error);
@@ -126,6 +125,8 @@ class Controller {
   static async handleAddProduct(req, res) {
     try {
       const { name, price, description, CategoryId } = req.body;
+      console.log(req.file);
+      
 
       const { path } = req.file;
       const { userId } = req.session.user;
@@ -137,12 +138,15 @@ class Controller {
         image: path,
         CategoryId,
       });
+      res.redirect('/home-seller')
     } catch (error) {
       if (error.name === 'SequelizeValidationError') {
         const errors = error.errors.map((e) => e.message).join('. ');
         res.redirect(`/seller/add/product?errors=${errors}`);
       } else {
         res.send(error);
+        console.log(error);
+        
       }
     }
   }
